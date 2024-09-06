@@ -6,41 +6,41 @@ export default function Courses() {
   const courseCategories = [
     {
       id: 'A1',
-      title: 'Category A1',
-      description: 'Motorcycles of Category A, tricycles, and quadricycles.'
+      title: 'Catégorie A1',
+      description: 'Motos de catégorie A, tricycles et quadricycles.'
     },
     {
       id: 'A2',
-      title: 'Category A2',
-      description: 'Motorcycles of Categories B and C.'
+      title: 'Catégorie A2',
+      description: 'Motos des catégories B et C.'
     },
     {
       id: 'B',
-      title: 'Category B',
-      description: 'Vehicles and automobiles with a total authorized weight not exceeding 3500 kg. Suitable for transporting people and goods.'
+      title: 'Catégorie B',
+      description: 'Véhicules et automobiles d\'un poids total autorisé ne dépassant pas 3500 kg. Convient pour le transport de personnes et de marchandises.'
     },
     {
       id: 'C',
-      title: 'Category C',
-      description: 'Vehicles for transporting goods or materials with a total authorized weight exceeding 3500 kg but not exceeding 19000 kg.'
+      title: 'Catégorie C',
+      description: 'Véhicules destinés au transport de marchandises ou de matériaux d\'un poids total autorisé supérieur à 3500 kg mais ne dépassant pas 19000 kg.'
     },
     {
       id: 'E',
-      title: 'Category E',
-      description: 'Vehicles for transporting goods or materials with a total authorized weight exceeding 19000 kg.'
+      title: 'Catégorie E',
+      description: 'Véhicules destinés au transport de marchandises ou de matériaux d\'un poids total autorisé supérieur à 19000 kg.'
     },
     {
       id: 'D',
-      title: 'Category D',
-      description: 'Vehicles designed for transporting more than 8 people, excluding the driver, or with a total authorized weight exceeding 3500 kg.'
+      title: 'Catégorie D',
+      description: 'Véhicules conçus pour transporter plus de 8 personnes, sans compter le conducteur, ou d\'un poids total autorisé supérieur à 3500 kg.'
     }
   ];
 
   return (
     <div className="bg-gradient-to-r from-blue-50 to-blue-100 py-16 px-4">
       <section className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4 text-gray-800">Our Driving Courses</h1>
-        <p className="text-lg text-gray-600 mb-6">Choose the right category for your driving needs. Our courses offer comprehensive training for various vehicle categories.</p>
+        <h1 className="text-5xl font-bold mb-4 text-gray-800">Nos Cours de Conduite</h1>
+        <p className="text-lg text-gray-600 mb-6">Choisissez la catégorie adaptée à vos besoins de conduite. Nos cours offrent une formation complète pour diverses catégories de véhicules.</p>
       </section>
 
       <section>
@@ -52,7 +52,7 @@ export default function Courses() {
             >
               <div className="relative w-full h-48">
                 <Image
-                  src={`/images/${course.id}.png`} // Ensure images are correctly named and located
+                  src={`/images/${course.id}.png`} // Assurez-vous que les images sont correctement nommées et situées
                   alt={course.title}
                   layout="fill"
                   objectFit="cover"
